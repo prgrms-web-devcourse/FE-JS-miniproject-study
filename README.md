@@ -4,3 +4,4 @@
 
 1. Colors [folder](./1-Colors/)
 2. Hex Colors Gradient [folder](./2-Hex_Colors_Gradeint)
+3. Random Quote Generator [folder](./3-Random_Quote_Generator)
