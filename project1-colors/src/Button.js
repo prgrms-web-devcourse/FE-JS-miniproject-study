@@ -5,7 +5,10 @@ export default function Button({ $target, onClick }) {
 
   $button.addEventListener("click", (e) => {
     const generateRandomColorCode = () => {
-      return Math.floor(Math.random() * 16777215).toString(16);
+      const randomHex = Math.floor(Math.random() * 16777215).toString(16);
+      return randomHex.length < 6
+        ? `${"0".repeat(6 - randomHex.length)}${randomHex}`
+        : randomHex;
     };
     onClick(generateRandomColorCode());
   });
