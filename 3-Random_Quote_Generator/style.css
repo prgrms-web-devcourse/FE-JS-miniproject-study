@@ -1,9 +1,12 @@
+body{
+    margin: 0;
+}
 .app{
     width: 100vw;
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     font-family: 'Times New Roman', Times, serif;
     background : linear-gradient(to right, #f7b24a, #4aa193);
