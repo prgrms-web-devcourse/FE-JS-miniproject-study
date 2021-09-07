@@ -1,7 +1,7 @@
 {
   "name": "random-color",
   "version": "1.0.0",
-  "description": "- 브랜치명은 JSmini_lia 형식으로 만들어 주세요. - 매주 주어진 양의 project를 완성 후 project 단위로 PR해 주세요!     - [Project1/리아] 프로젝트명     - 예) [Project1/리아] Colors",
+  "description": "",
   "main": "index.html",
   "dependencies": {
     "eslint-plugin-html": "^6.1.2"
