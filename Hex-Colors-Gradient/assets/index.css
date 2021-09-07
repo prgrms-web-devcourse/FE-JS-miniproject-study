@@ -1,0 +1,41 @@
+.main-container {
+  background: linear-gradient(to right, #ffffff, #ffffff);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.background-text {
+  font-size: 45px;
+  animation: 2s linear 1.5s infinite alternate colorChange;
+  margin: 5vh;
+}
+
+.color-event-button {
+  background-color: transparent;
+  border: 1px solid black;
+  color: black;
+  border-radius: 5px;
+  padding: 14px 12.5px;
+  font-size: 20px;
+  transition: all 0.15s;
+}
+
+.color-event-button:hover {
+  background-color: black;
+  color: white;
+  padding: 15px 12.5px;
+}
+
+@keyframes colorChange {
+  from {
+    color: #000000;
+  }
+  to {
+    color: #ffffff;
+  }
+}
