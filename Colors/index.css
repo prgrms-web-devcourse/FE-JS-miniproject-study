@@ -1,0 +1,33 @@
+body {
+    box-sizing: border-box;
+    margin: 0px;
+}
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    background-color: transparent;
+    color: #343a40;
+    text-align: center;
+    vertical-align: center;
+    cursor: pointer;
+    font-weight: 400px;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 5px;
+    padding: 10px;
+    display: inline-block;
+}
+
+.btn:focus {
+    box-shadow: 0 0 0 0.2rem rgb(52 58 64 / 50%);
+}
+
+.btn:hover {
+    background-color: #343a40;
+    color: white;
+}
