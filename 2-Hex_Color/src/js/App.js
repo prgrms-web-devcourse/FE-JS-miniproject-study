@@ -19,12 +19,12 @@ export default function App({ $target }) {
       direction,
     },
     onChangeColor: () => {
-      const colorNum = Math.floor(Math.random() * leftOption.length)
-      const direcNum = Math.floor(Math.random() * directOption.length)
+      const colorRandomNum = Math.floor(Math.random() * leftOption.length)
+      const direcRandomNum = Math.floor(Math.random() * directOption.length)
 
-      const selectedLeft = leftOption[colorNum]
-      const selectedRight = rightOption[colorNum]
-      const selectedDirection = directOption[direcNum]
+      const selectedLeft = leftOption[colorRandomNum]
+      const selectedRight = rightOption[colorRandomNum]
+      const selectedDirection = directOption[direcRandomNum]
 
       this.setState({
         left: selectedLeft,
