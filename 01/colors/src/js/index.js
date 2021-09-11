@@ -1,4 +1,4 @@
-import { COLOR_CHIP } from "../data/constant.js";
+import { COLOR_CHIP } from "../../data/constant.js";
 
 const $container = document.querySelector(".container");
 const $clickBtn = document.querySelector(".click-btn");
