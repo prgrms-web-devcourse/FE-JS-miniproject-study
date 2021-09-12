@@ -51,10 +51,7 @@ export default function HexColorsGradientPage({ $target }) {
     appendIfPageNotExists($target, $page)
 
     const { leftColor, rightColor } = this.state
-    $page.setAttribute(
-      'style',
-      `background: linear-gradient(to right, ${leftColor}, ${rightColor});`,
-    )
+    $page.style.background = `linear-gradient(to right, ${leftColor}, ${rightColor})`
 
     $gradient.textContent = `background: linear-gradient(to right, ${leftColor}, ${rightColor});`
   }

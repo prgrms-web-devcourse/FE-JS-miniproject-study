@@ -29,6 +29,6 @@ export default function ColorsPage({ $target }) {
   this.render = () => {
     appendIfPageNotExists($target, $page)
 
-    $page.setAttribute('style', `background-color: ${this.state.color};`)
+    $page.style.backgroundColor = this.state.color
   }
 }
