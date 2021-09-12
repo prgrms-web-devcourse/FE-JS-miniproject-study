@@ -15,13 +15,26 @@ export default function RandomQuotePage({ $target }) {
     text: 'Generate Quote',
     className: 'RandomQuote__button',
     onClickGenerate: async () => {
-      const nextState = await fetchQuote()
+      if (this.state.isLoading) {
+        return
+      }
 
-      this.setState(nextState)
+      this.setState({
+        ...this.state,
+        isLoading: true,
+      })
+
+      const nextQuoteAndAuthor = await fetchQuote()
+
+      this.setState({
+        ...nextQuoteAndAuthor,
+        isLoading: false,
+      })
     },
   })
 
   this.state = {
+    isLoading: false,
     quote: '',
     author: '',
   }
