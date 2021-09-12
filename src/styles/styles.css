@@ -1,2 +1,7 @@
-@import "./reset.css";
-@import "./app.css";
+@import './reset.css';
+@import './app.css';
+
+* {
+  --colors-default-color: #343a40;
+  --colors-invert-color: #ffffff;
+}
