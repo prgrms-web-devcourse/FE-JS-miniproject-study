@@ -5,7 +5,7 @@ export default function GenerateButton({
   onClickGenerate,
 }) {
   const $button = document.createElement('button')
-  $button.className = className
+  $button.className = `GenerateButton ${className}`
   $button.textContent = text
   $target.appendChild($button)
 
