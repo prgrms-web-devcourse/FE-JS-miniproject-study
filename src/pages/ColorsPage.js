@@ -1,5 +1,6 @@
 import RandomColorButton from '../components/GenerateButton.js'
 import { getRandomColor } from '../utils/colors.js'
+import { appendIfPageNotExists } from '../utils/render.js'
 
 export default function ColorsPage({ $target }) {
   const $page = document.createElement('div')
@@ -26,9 +27,7 @@ export default function ColorsPage({ $target }) {
   })
 
   this.render = () => {
-    if (!$target.querySelector(`.${$page.className}`)) {
-      $target.appendChild($page)
-    }
+    appendIfPageNotExists($target, $page)
 
     $page.setAttribute('style', `background-color: ${this.state.color};`)
   }

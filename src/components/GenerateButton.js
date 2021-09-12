@@ -9,7 +9,7 @@ export default function GenerateButton({
   $button.textContent = text
   $target.appendChild($button)
 
-  $button.addEventListener('click', (e) => {
+  $button.addEventListener('click', () => {
     onClickGenerate()
   })
 }

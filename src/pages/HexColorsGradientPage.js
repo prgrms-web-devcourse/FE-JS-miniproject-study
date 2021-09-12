@@ -1,5 +1,6 @@
 import GenerateButton from '../components/GenerateButton.js'
 import { getRandomColor } from '../utils/colors.js'
+import { appendIfPageNotExists } from '../utils/render.js'
 
 const INFO_TEXT =
   'CLICK THE BUTTON BELLOW TO GENERATE A RANDOM GRADIENT HEX COLOR COMBINATION'
@@ -47,9 +48,7 @@ export default function HexColorsGradientPage({ $target }) {
   })
 
   this.render = () => {
-    if (!$target.querySelector(`.${$page.className}`)) {
-      $target.appendChild($page)
-    }
+    appendIfPageNotExists($target, $page)
 
     const { leftColor, rightColor } = this.state
     $page.setAttribute(
