@@ -1,1 +1,1 @@
-export const MAX_RGB_NUMBER = 16777215
+export const MAX_RGB_NUMBER = 0xffffff
