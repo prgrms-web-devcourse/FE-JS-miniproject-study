@@ -5,8 +5,8 @@ export default function Sign({ $target }) {
   this.state = {
     direction: "right",
     colorCode: {
-      start: "#ffffff",
-      end: "#ffffff",
+      start: "ffffff",
+      end: "ffffff",
     },
   };
 
