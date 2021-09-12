@@ -1,11 +1,10 @@
-import RandomColorButton from '../components/RandomColorButton.js'
+import RandomColorButton from '../components/GenerateButton.js'
 import { MAX_RGB_NUMBER } from '../constants.js'
 
 export default function ColorsPage({ $target }) {
   const $page = document.createElement('div')
   $page.className = 'Colors'
 
-  $target.appendChild($page)
   this.state = {
     color: '#ffffff',
   }
@@ -17,7 +16,9 @@ export default function ColorsPage({ $target }) {
 
   new RandomColorButton({
     $target: $page,
-    onClickColorGenerate: () => {
+    text: 'Click Me!',
+    className: 'RandomColorButton',
+    onClickGenerate: () => {
       const rgb = Math.floor(Math.random() * MAX_RGB_NUMBER).toString(16)
       const color = `#${rgb}`
 
@@ -26,6 +27,10 @@ export default function ColorsPage({ $target }) {
   })
 
   this.render = () => {
+    if (!$target.querySelector(`.${$page.className}`)) {
+      $target.appendChild($page)
+    }
+
     $page.setAttribute('style', `background-color: ${this.state.color};`)
   }
 }
