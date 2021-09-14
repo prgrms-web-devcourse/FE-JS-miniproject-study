@@ -1,4 +1,4 @@
-const $button = document.getElementById('button');
+const $button = document.querySelector('.click-button');
 
 const $body = document.querySelector('body');
 
