@@ -8,7 +8,7 @@ $currentStyle.textContent = $body.style.background;
 
 const $button = document.getElementById('button');
 
-const randomHexColor = () => `#${Math.floor(Math.random() * (256 ** 3)).toString(16)}`;
+const randomHexColor = () => `#${Math.floor(Math.random() * (256 ** 3)).toString(16).padStart(6, 0)}`;
 
 $button.addEventListener('click', () => {
   const currentColor = `linear-gradient(to right, ${randomHexColor()}, ${randomHexColor()})`;
