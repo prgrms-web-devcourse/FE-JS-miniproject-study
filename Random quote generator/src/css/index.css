@@ -1,0 +1,71 @@
+body {
+    box-sizing: border-box;
+    font-family: 'Comfortaa', sursive;
+    margin: 0px;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: radial-gradient(circle, #5181b0 200px, #605ea6, #6649a0);
+}
+
+.inner-quotes-container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 400px;
+    width: 900px;
+    padding: 0 25px;
+    border-radius: 10px;
+    background-color: #f4edea;
+    border: 10px solid #06bdc1;
+    box-shadow: 0px 2px 6px 0px rgb(0 0 0 / 90%);
+}
+
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    color: #212529;
+    text-align: center;
+    cursor: pointer;
+    vertical-align: middle;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.btn-info {
+    margin: 30px;
+    color: #fff;
+    background-color: #17a2b8;
+    border-color: #17a2b8;
+}
+
+.btn-info:hover {
+    color: #fff;
+    background-color: #138496;
+    border-color: #117a8b;
+}
+
+.inner-quotes-container p {
+    font-size: 1.5rem;
+    color: black;
+}
+
+.inner-quotes-container h3 {
+    font-size: 2rem;
+    color: black;
+    font-family: 'Dancing Script', cursive;
+}
