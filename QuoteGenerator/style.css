@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  background: radial-gradient(circle, rgba(17, 200, 155, 1) 0%, rgba(49, 20, 129, 1) 100%);
+}
+
+.container .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 60vw;
+  height: 40vh;
+  margin-bottom: 3vh;
+  border: 8px solid #16e790;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.container p:first-child::before,
+.container p:first-child::after {
+  content: '"';
+}
+
+.container p:last-child::before {
+  content: "- ";
+}
+
+.container p {
+  width: 95%;
+  margin-bottom: 20px;
+  font-size: 24px;
+  text-align: center;
+}
+
+.container p:last-child {
+  font-style: italic;
+  font-family: "Dancing Script", cursive, serif;
+}
+
+.container button {
+  padding: 10px 20px;
+  border-radius: 3px;
+  border: 0;
+  background-color: #7332e7;
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.container button:focus {
+  outline: none;
+  box-shadow: 0px 0px 0px 4px rgba(255, 255, 255, 0.3);
+}
+
+.container button:hover {
+  background-color: #5e18db;
+}
