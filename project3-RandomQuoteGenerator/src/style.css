@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Dancing+Script&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --background-gradient: radial-gradient(#2b8fb4, #67489f);
+  --box-border-color: #06bdc1;
+  --button-color: #17a2b8;
+  --button-hover-color: #138496;
+  --button-font-color: white;
+  --button-border-color: #117a8b;
+  --font-quote: "Caveat", cursive;
+  --font-author: "Dancing Script", cursive;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: var(--background-gradient);
+}
+
+#app .quoteContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 700px;
+  min-height: 350px;
+  padding: 50px;
+  box-sizing: border-box;
+  background-color: white;
+  margin-bottom: 30px;
+  border: 10px solid var(--box-border-color);
+  border-radius: 10px;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.9);
+}
+
+#app .quoteContainer .quoteArea {
+  font-family: var(--font-quote);
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#app .quoteContainer .authorArea {
+  font-family: var(--font-author);
+  font-size: 2rem;
+}
+
+button {
+  padding: 10px 15px;
+  background-color: var(--button-color);
+  border-radius: 5px;
+  cursor: pointer;
+  outline: 0;
+  color: var(--button-font-color);
+  font-size: 1rem;
+  border: 1px solid var(--button-border-color);
+  transition: all 0.2s;
+}
+
+button:hover {
+  color: white;
+  font-weight: 500;
+  background-color: var(--button-hover-color);
+}
+
+@media screen and (max-width: 1000px) {
+  #app {
+    padding: 0 100px;
+  }
+
+  #app .quoteContainer {
+    width: 100%;
+  }
+}
