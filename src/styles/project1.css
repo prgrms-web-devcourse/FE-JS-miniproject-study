@@ -1,0 +1,18 @@
+.project1 button {
+  padding: 10px 15px;
+  background-color: transparent;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: 0;
+  color: rgb(52, 58, 64);
+  font-size: 16px;
+  border: 1px solid rgb(52, 58, 64);
+  transition: all 0.2s;
+  box-shadow: 0px 0px 0px 5px rgb(255, 255, 255, 0.8);
+}
+
+.project1 button:hover {
+  color: white;
+  font-weight: 500;
+  background-color: rgb(52, 58, 64);
+}

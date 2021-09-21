@@ -1,0 +1,54 @@
+:root .project2 {
+  --text-start-color: rgb(52, 58, 64);
+  --text-end-color: white;
+  --button-color: white;
+  --button-hover-color: rgb(52, 58, 64);
+  --button-font-color: rgb(52, 58, 64);
+  --button-border-color: rgb(52, 58, 64);
+}
+
+.project2 div {
+  text-align: center;
+  animation: 3s ease-in-out 1s infinite alternate changeFontColor;
+  color: var(--text-start-color);
+}
+
+.project2 h1 {
+  font-size: 2rem;
+  margin-bottom: 100px;
+  line-height: 3rem;
+}
+
+.project2 h2 {
+  font-size: 1.6rem;
+  margin-bottom: 30px;
+}
+
+.project2 button {
+  padding: 10px 15px;
+  background-color: var(--button-color);
+  border-radius: 5px;
+  cursor: pointer;
+  outline: 0;
+  color: var(--button-font-color);
+  font-size: 16px;
+  border: 1px solid var(--button-border-color);
+  transition: all 0.2s;
+  box-shadow: 0px 0px 0px 5px rgb(255, 255, 255, 0.8);
+}
+
+.project2 button:hover {
+  color: white;
+  font-weight: 500;
+  background-color: var(--button-hover-color);
+}
+
+@keyframes changeFontColor {
+  from {
+    color: var(--text-start-color);
+  }
+
+  to {
+    color: var(--text-end-color);
+  }
+}
