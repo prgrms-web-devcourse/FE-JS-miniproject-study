@@ -13,6 +13,10 @@ const projects = [
     name: 'Random Quote Generator',
     path: '/random-quote',
   },
+  {
+    name: 'The message',
+    path: '/the-message',
+  },
 ]
 
 export default function HomePage({ $target }) {
