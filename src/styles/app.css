@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Dancing+Script&family=Poiret+One&display=swap');
 
 @keyframes changeColor {
   0% {
@@ -393,4 +393,50 @@
 
 .Carousel__indicator-dot--selected {
   background-color: black;
+}
+
+/* * project 7 */
+@media (max-width: 768px) {
+  .Clock__bar {
+    display: none;
+  }
+
+  .Clock__number {
+    width: 100%;
+  }
+}
+
+.DigitalClock {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: conic-gradient(
+    from 90deg at 25% -10%,
+    #ff4500,
+    #d3f340,
+    #7bee85,
+    #afeeee,
+    #7bee85
+  );
+}
+
+.Clock {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 80%;
+  padding: 20px 0px;
+  background-color: rgba(0, 0, 0, 0.09);
+  color: white;
+  font-family: 'Poiret One';
+  font-size: 5rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.Clock * {
+  margin: 0 10px;
+  padding: 10px 0px;
 }

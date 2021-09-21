@@ -25,6 +25,10 @@ const projects = [
     name: 'Image Carousel',
     path: '/image-carousel',
   },
+  {
+    name: 'Digital Clock',
+    path: '/digital-clock',
+  },
 ]
 
 export default function HomePage({ $target }) {

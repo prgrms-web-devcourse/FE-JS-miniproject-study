@@ -1,6 +1,7 @@
 import CarouselPage from './pages/CarouselPage.js'
 import ColorsPage from './pages/ColorsPage.js'
 import CounterPage from './pages/CounterPage.js'
+import DigitalClockPage from './pages/DigitalClockPage.js'
 import HexColorsGradientPage from './pages/HexColorsGradientPage.js'
 import HomePage from './pages/HomePage.js'
 import MessagePage from './pages/MessagePage.js'
@@ -16,6 +17,7 @@ export default function App({ $target }) {
   const messagePage = new MessagePage({ $target })
   const counterPage = new CounterPage({ $target })
   const carouselPage = new CarouselPage({ $target })
+  const digitalClockPage = new DigitalClockPage({ $target })
 
   this.route = () => {
     const { pathname } = location
@@ -35,6 +37,8 @@ export default function App({ $target }) {
       counterPage.render()
     } else if (pathname === '/image-carousel') {
       carouselPage.render()
+    } else if (pathname === '/digital-clock') {
+      digitalClockPage.render()
     }
   }
 
