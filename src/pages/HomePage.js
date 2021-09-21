@@ -21,6 +21,10 @@ const projects = [
     name: 'Counter',
     path: '/counter',
   },
+  {
+    name: 'Image Carousel',
+    path: '/image-carousel',
+  },
 ]
 
 export default function HomePage({ $target }) {

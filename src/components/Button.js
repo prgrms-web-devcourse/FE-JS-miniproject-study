@@ -6,7 +6,7 @@ export default function Button({
 }) {
   const $button = document.createElement('button')
   $button.className = `GenerateButton ${className}`
-  $button.textContent = text
+  $button.innerHTML = text
   $target.appendChild($button)
 
   $button.addEventListener('click', () => {

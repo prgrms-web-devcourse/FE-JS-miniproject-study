@@ -1,3 +1,4 @@
+import CarouselPage from './pages/CarouselPage.js'
 import ColorsPage from './pages/ColorsPage.js'
 import CounterPage from './pages/CounterPage.js'
 import HexColorsGradientPage from './pages/HexColorsGradientPage.js'
@@ -14,6 +15,7 @@ export default function App({ $target }) {
   const randomQuotePage = new RandomQuotePage({ $target })
   const messagePage = new MessagePage({ $target })
   const counterPage = new CounterPage({ $target })
+  const carouselPage = new CarouselPage({ $target })
 
   this.route = () => {
     const { pathname } = location
@@ -31,6 +33,8 @@ export default function App({ $target }) {
       messagePage.render()
     } else if (pathname === '/counter') {
       counterPage.render()
+    } else if (pathname === '/image-carousel') {
+      carouselPage.render()
     }
   }
 
