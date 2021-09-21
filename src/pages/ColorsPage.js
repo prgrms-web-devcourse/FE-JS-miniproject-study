@@ -19,7 +19,7 @@ export default function ColorsPage({ $target }) {
     $target: $page,
     text: 'Click Me!',
     className: 'RandomColorButton',
-    onClickGenerate: () => {
+    onClick: () => {
       const color = getRandomColor()
 
       this.setState({ color })

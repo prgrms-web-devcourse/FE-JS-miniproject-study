@@ -14,7 +14,7 @@ export default function RandomQuotePage({ $target }) {
     $target: $page,
     text: 'Generate Quote',
     className: 'RandomQuote__button',
-    onClickGenerate: async () => {
+    onClick: async () => {
       if (this.state.isLoading) {
         return
       }

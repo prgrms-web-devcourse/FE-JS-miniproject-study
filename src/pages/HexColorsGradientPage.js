@@ -36,7 +36,7 @@ export default function HexColorsGradientPage({ $target }) {
     $target: $page,
     text: 'Click Me!',
     className: 'RandomGradientButton',
-    onClickGenerate: () => {
+    onClick: () => {
       const leftColor = getRandomColor()
       const rightColor = getRandomColor()
 
