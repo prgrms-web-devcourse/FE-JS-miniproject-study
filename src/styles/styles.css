@@ -1,0 +1,11 @@
+@import './reset.css';
+@import './app.css';
+
+* {
+  --colors-default-color: #343a40;
+  --colors-invert-color: #ffffff;
+}
+
+button {
+  font-family: inherit;
+}
