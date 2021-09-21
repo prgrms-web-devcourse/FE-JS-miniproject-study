@@ -1,4 +1,4 @@
-import GenerateButton from '../components/GenerateButton.js'
+import GenerateButton from '../components/Button.js'
 import { fetchQuote } from '../service/quoteApi.js'
 import { appendIfPageNotExists } from '../utils/render.js'
 

@@ -1,8 +1,8 @@
-export default function GenerateButton({
+export default function Button({
   $target,
   text = 'Click Me!',
   className,
-  onClickGenerate,
+  onClick,
 }) {
   const $button = document.createElement('button')
   $button.className = `GenerateButton ${className}`
@@ -10,6 +10,6 @@ export default function GenerateButton({
   $target.appendChild($button)
 
   $button.addEventListener('click', () => {
-    onClickGenerate()
+    onClick()
   })
 }

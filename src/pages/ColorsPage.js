@@ -1,4 +1,4 @@
-import RandomColorButton from '../components/GenerateButton.js'
+import RandomColorButton from '../components/Button.js'
 import { getRandomColor } from '../utils/colors.js'
 import { appendIfPageNotExists } from '../utils/render.js'
 

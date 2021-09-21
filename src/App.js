@@ -1,4 +1,5 @@
 import ColorsPage from './pages/ColorsPage.js'
+import CounterPage from './pages/CounterPage.js'
 import HexColorsGradientPage from './pages/HexColorsGradientPage.js'
 import HomePage from './pages/HomePage.js'
 import MessagePage from './pages/MessagePage.js'
@@ -12,6 +13,7 @@ export default function App({ $target }) {
   const hexColorsGradientPage = new HexColorsGradientPage({ $target })
   const randomQuotePage = new RandomQuotePage({ $target })
   const messagePage = new MessagePage({ $target })
+  const counterPage = new CounterPage({ $target })
 
   this.route = () => {
     const { pathname } = location
@@ -25,8 +27,10 @@ export default function App({ $target }) {
       hexColorsGradientPage.render()
     } else if (pathname === '/random-quote') {
       randomQuotePage.render()
-    } else if (pathname == '/the-message') {
+    } else if (pathname === '/the-message') {
       messagePage.render()
+    } else if (pathname === '/counter') {
+      counterPage.render()
     }
   }
 

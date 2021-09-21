@@ -17,6 +17,10 @@ const projects = [
     name: 'The message',
     path: '/the-message',
   },
+  {
+    name: 'Counter',
+    path: '/counter',
+  },
 ]
 
 export default function HomePage({ $target }) {
