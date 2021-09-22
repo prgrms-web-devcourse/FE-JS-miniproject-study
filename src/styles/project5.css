@@ -1,0 +1,62 @@
+:root .project5 {
+  --bg-color: linear-gradient(to top, #9795f0 0%, #fbc8d4 100%);
+  --base-font-family: 'Noto Sans KR', sans-serif;
+  --border-radius: 0.4rem;
+  --box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.4);
+  --base-margin: 1.3rem;
+  --base-padding: 1.6rem;
+  --button-padding: 0.5rem;
+  --button-border: 1px solid gray;
+  --button-color: rgb(52, 58, 64);
+  --button-bg-color: transparent;
+  --button-hover-color: purple;
+  --box-border: 5px solid rebeccapurple;
+}
+
+.project5.page {
+  background-image: var(--bg-color);
+  font-weight: bold;
+  flex-direction: row;
+}
+
+.project5 button {
+  padding: 10px 15px;
+  background-color: var(--button-bg-color);
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  outline: 0;
+  color: var(--button-color);
+  font-size: 16px;
+  border: var(--button-border);
+  transition: all 0.2s;
+}
+
+.project5 button:hover {
+  color: white;
+  font-weight: 500;
+  background-color: var(--button-hover-color);
+}
+
+.project5 button + button {
+  margin-left: 20px;
+}
+
+.project5 .countContainer {
+  text-align: center;
+  background-color: white;
+  flex-basis: 500px;
+  padding: var(--base-padding);
+  box-sizing: border-box;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  border: var(--box-border);
+}
+
+.project5 .countContainer h2 {
+  font-size: 2rem;
+}
+
+.project5 .countContainer p {
+  font-size: 6.5rem;
+  line-height: 12rem;
+}

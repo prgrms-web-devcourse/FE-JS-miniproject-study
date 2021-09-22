@@ -6,6 +6,7 @@ import Project1Page from '../../project1-colors/src/Project1Page.js';
 import Project2Page from '../../project2-HexColorsGradient/src/Project2Page.js';
 import Project3Page from '../../project3-RandomQuoteGenerator/src/Project3Page.js';
 import Project4Page from '../pages/Project4Page.js';
+import Project5Page from '../pages/Project5Page.js';
 
 export default function App({ $target }) {
   new Header({ $target });
@@ -19,6 +20,7 @@ export default function App({ $target }) {
   const project2Page = new Project2Page({ $target: $main });
   const project3Page = new Project3Page({ $target: $main });
   const project4Page = new Project4Page({ $target: $main });
+  const project5Page = new Project5Page({ $target: $main });
 
   this.route = () => {
     $main.innerHTML = ``;
@@ -40,6 +42,9 @@ export default function App({ $target }) {
           break;
         case 4:
           project4Page.render();
+          break;
+        case 5:
+          project5Page.render();
           break;
       }
     } else {
