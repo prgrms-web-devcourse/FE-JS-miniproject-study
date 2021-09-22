@@ -1,7 +1,7 @@
-import Button from "./Button.js";
-import Sign from "./Sign.js";
+import Button from './Button.js';
+import Sign from './Sign.js';
 
-const $app = document.querySelector("#app");
+const $app = document.querySelector('#app');
 
 const signBoard = new Sign({ $target: $app });
 

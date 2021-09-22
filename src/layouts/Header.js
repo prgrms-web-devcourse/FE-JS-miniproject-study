@@ -1,5 +1,5 @@
 export default function Header({ $target }) {
-  const $header = document.createElement("header");
+  const $header = document.createElement('header');
   $target.append($header);
 
   this.render = () => {

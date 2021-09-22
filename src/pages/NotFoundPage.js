@@ -1,6 +1,6 @@
 export default function NotFoundPage({ $target }) {
-  const $page = document.createElement("div");
-  $page.className = "notFound page";
+  const $page = document.createElement('div');
+  $page.className = 'notFound page';
 
   this.render = () => {
     $page.innerHTML = /* html */ `

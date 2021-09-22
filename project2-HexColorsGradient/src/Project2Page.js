@@ -1,10 +1,10 @@
-import Button from "./Button.js";
-import Sign from "./Sign.js";
+import Button from './Button.js';
+import Sign from './Sign.js';
 
 export default function Project2Page({ $target }) {
-  const $page = document.createElement("div");
+  const $page = document.createElement('div');
 
-  $page.className = "project2 page";
+  $page.className = 'project2 page';
 
   const signBoard = new Sign({ $target: $page });
 

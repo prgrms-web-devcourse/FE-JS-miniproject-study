@@ -1,15 +1,15 @@
-import Header from "../layouts/Header.js";
+import Header from '../layouts/Header.js';
 
-import HomePage from "../pages/HomePage.js";
-import NotFoundPage from "../pages/NotFoundPage.js";
-import Project1Page from "../../project1-colors/src/Project1Page.js";
-import Project2Page from "../../project2-HexColorsGradient/src/Project2Page.js";
-import Project3Page from "../../project3-RandomQuoteGenerator/src/Project3Page.js";
+import HomePage from '../pages/HomePage.js';
+import NotFoundPage from '../pages/NotFoundPage.js';
+import Project1Page from '../../project1-colors/src/Project1Page.js';
+import Project2Page from '../../project2-HexColorsGradient/src/Project2Page.js';
+import Project3Page from '../../project3-RandomQuoteGenerator/src/Project3Page.js';
 
 export default function App({ $target }) {
   new Header({ $target });
 
-  const $main = document.createElement("main");
+  const $main = document.createElement('main');
   $target.append($main);
 
   const homePage = new HomePage({ $target: $main });
@@ -25,7 +25,7 @@ export default function App({ $target }) {
     if (pathname === `/`) {
       homePage.render();
     } else if (pathname.indexOf(`/project/`) === 0) {
-      const [, , projectId] = pathname.split("/");
+      const [, , projectId] = pathname.split('/');
       switch (parseInt(projectId)) {
         case 1:
           project1Page.render();
@@ -44,8 +44,8 @@ export default function App({ $target }) {
 
   this.route();
 
-  window.addEventListener("click", (e) => {
-    if (e.target.className === "link") {
+  window.addEventListener('click', (e) => {
+    if (e.target.className === 'link') {
       e.preventDefault();
       history.pushState(null, null, e.target.href);
 

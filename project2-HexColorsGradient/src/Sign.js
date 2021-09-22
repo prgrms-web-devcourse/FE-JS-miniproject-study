@@ -1,12 +1,12 @@
 export default function Sign({ $target }) {
-  const $signContainer = document.createElement("div");
+  const $signContainer = document.createElement('div');
   $target.append($signContainer);
 
   this.state = {
-    direction: "right",
+    direction: 'right',
     colorCode: {
-      start: "ffffff",
-      end: "ffffff",
+      start: 'ffffff',
+      end: 'ffffff',
     },
   };
 

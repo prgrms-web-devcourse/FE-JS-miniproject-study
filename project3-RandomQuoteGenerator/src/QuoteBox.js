@@ -1,11 +1,11 @@
 export default function QuoteBox({ $target }) {
-  const $box = document.createElement("div");
+  const $box = document.createElement('div');
   $target.append($box);
-  $box.className = "quoteContainer";
+  $box.className = 'quoteContainer';
 
   this.state = {
-    quote: "",
-    author: "",
+    quote: '',
+    author: '',
   };
 
   this.setState = (nextState) => {

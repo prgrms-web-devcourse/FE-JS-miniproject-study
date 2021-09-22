@@ -1,9 +1,9 @@
-import App from "./App.js";
+import App from './App.js';
 
 export default function Project3Page({ $target }) {
-  const $page = document.createElement("div");
+  const $page = document.createElement('div');
 
-  $page.className = "project3 page";
+  $page.className = 'project3 page';
 
   new App({ $target: $page });
 
