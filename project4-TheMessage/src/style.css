@@ -1,0 +1,114 @@
+:root .project4 {
+  --bg-color: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+  --base-font-family: 'Noto Sans KR', sans-serif;
+  --border-radius: 0.4rem;
+  --box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.4);
+  --base-margin: 1.3rem;
+  --base-padding: 1.6rem;
+  --base-button-padding: 0.5rem;
+  --base-button-border: 1px solid gray;
+  --base-button-color: #d4e1e6;
+  --base-button-hover-color: #f4d9e4;
+  --base-line-height: 1.6rem;
+}
+
+.wrap {
+  width: 100vw;
+  height: 100vh;
+}
+
+.page {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project4.page {
+  background-image: var(--bg-color);
+  padding: 1.6rem;
+  box-sizing: border-box;
+  flex-direction: row;
+  font-weight: bold;
+}
+
+.project4 .messageBox {
+  font-family: var(--base-font-family);
+  padding: 0 var(--base-padding);
+  background-color: white;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  flex-basis: 500px;
+  box-sizing: border-box;
+}
+
+.project4 .messageBox h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: var(--base-padding);
+  text-align: center;
+}
+
+.project4 .messageBox hr {
+  background-color: lightgray;
+  height: 2px;
+  border: 0;
+  margin-top: 0;
+}
+
+.project4 .messageBox label {
+  display: block;
+  font-weight: normal;
+  margin: var(--base-margin) 0;
+}
+
+.project4 .messageBox .inputBox {
+  display: flex;
+}
+
+.project4 .messageBox .inputBox button {
+  padding: var(--base-button-padding);
+  border: var(--base-button-border);
+  border-right-width: 0;
+  border-radius: 0;
+  border-top-left-radius: var(--border-radius);
+}
+
+.project4 .messageBox .inputBox button:hover {
+  background-color: var(--base-button-hover-color);
+}
+
+.project4 .messageBox #messageInput {
+  flex-grow: 1;
+  padding: 0.5rem;
+  font-family: var(--base-font-family);
+  border: 1px solid gray;
+  border-radius: 0;
+  border-top-right-radius: var(--border-radius);
+}
+
+.project4 .messageBox #messageInput:focus {
+  outline: none;
+}
+
+.project4 .messageBox .button__submit {
+  width: 100%;
+  font-family: var(--base-font-family);
+  padding: var(--base-button-padding);
+  border-radius: 0;
+  border-bottom-left-radius: var(--border-radius);
+  border-bottom-right-radius: var(--border-radius);
+  border: var(--base-button-border);
+  border-top-width: 0;
+  background-color: var(--base-button-color);
+}
+
+.project4 .messageBox .button__submit:hover {
+  background-color: var(--base-button-hover-color);
+}
+
+.project4 .messageBox .previewBox {
+  padding: 1.4rem;
+  text-align: center;
+}

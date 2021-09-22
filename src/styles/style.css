@@ -1,11 +1,13 @@
 @import url('./project1.css');
 @import url('./project2.css');
 @import url('./project3.css');
+@import url('./project4.css');
 
 :root {
   --primary-color: #306ba4;
   --highlight-color: #31d2f7;
   --border-radius: 1rem;
+  --base-font-family: 'Noto Sans KR', sans-serif;
 }
 
 * {
@@ -20,7 +22,7 @@ a {
 }
 
 body {
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: var(--base-font-family);
   font-weight: bold;
   letter-spacing: -1px;
 }
