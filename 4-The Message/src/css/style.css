@@ -1,0 +1,65 @@
+@import 'reset.css';
+
+html,
+body {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.msg_page {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background : linear-gradient(to bottom, #C0DEFC, #FCFEFF);
+}
+
+.msg_form {
+  width: 500px;
+  height: 250px;
+  border-radius: 10px;
+  background-color: #F5F5F5;
+  box-shadow: 0px 0px 4px 4px #E2E2E2;
+}
+
+.msg_form h2 {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 30px 0px 15px calc(34%);
+}
+
+.msg_form p {
+  width: 90%;
+  margin-left: 25px;
+  border-bottom: 2px solid rgba(211, 211, 211, 0.5);
+}
+
+.msg_form h3 {
+  font-size: 15px;
+  padding: 20px 0px 15px calc(5%);
+}
+
+.msg_form_btn { 
+  margin-left: 20px;
+  border: 2px gray;
+}
+
+.msg_form_input{
+  border: 2px gray;
+  width: 420px;
+  height: 30px;
+}
+
+.msg_form_submit {
+  margin-top: 30px;
+  margin-left: 10px;
+  width: 60px;
+  height: 30px;
+}
+
+.msg_view {
+  margin-top: 15px;
+  text-align: center;
+}
