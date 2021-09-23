@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Dancing+Script&family=Poiret+One&display=swap');
 
 @keyframes changeColor {
   0% {
@@ -175,4 +175,268 @@
   background-color: #138496;
   border-color: #117a8b;
   box-shadow: 0 0 0 4px rgba(58, 176, 195, 0.5);
+}
+
+/* project 4 */
+.Message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(#c3e0fc, white);
+}
+
+.MessageForm {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  max-width: 480px;
+  padding: 25px;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px gray;
+}
+
+.MessageForm__title {
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.MessageForm__divider {
+  background-color: #d3d3d3;
+  height: 1px;
+  margin: 18px 0px;
+}
+
+.MessageForm__info {
+  font-size: 14px;
+}
+
+.MessageForm__input-area {
+  width: 100%;
+  display: flex;
+  margin: 20px 0px;
+}
+
+.MessageForm__icon-button,
+.MessageForm__input,
+.MessageForm__submit {
+  outline: 0;
+  border: 1px solid #d3d3d3;
+  padding: 8px;
+}
+
+.MessageForm__icon-button {
+  border-radius: 5px 0 0 5px;
+}
+
+.MessageForm__icon-button:hover {
+  background-color: #d3d3d3;
+}
+
+.MessageForm__input {
+  flex-grow: 1;
+  border-radius: 0 5px 5px 0;
+}
+
+.MessageForm__preview {
+  padding: 20px 0px;
+  text-align: center;
+}
+
+.MessageForm__submit {
+  border-radius: 5px;
+}
+
+/* * project 5 */
+.Counter {
+  --page-bg-color: #fcfc62;
+  --btn-color: #feffea;
+  --btn-hover-color: #343a40;
+  --btn-box-shadow: rgba(52, 58, 64, 0.5) 0px 0px 0px 3.2px;
+}
+
+.Counter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: var(--page-bg-color);
+}
+
+.CounterContainer {
+  width: 600px;
+  padding: 40px 0px;
+  background-color: var(--btn-color);
+  border: 4px solid;
+  border-radius: 5px;
+}
+
+.Counter__title {
+  text-align: center;
+  font-size: 32px;
+}
+
+.Counter__number {
+  font-size: 138px;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 35px;
+}
+
+.Counter__buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 28px;
+}
+
+.Counter__button {
+  color: var(--btn-hover-color);
+  background-color: var(--btn-color);
+  margin-right: 6px;
+  padding: 6px 12px;
+}
+
+.Counter__button:last-child {
+  margin-right: 0;
+}
+
+.Counter__button:hover {
+  color: var(--btn-color);
+  background-color: var(--btn-hover-color);
+}
+
+.Counter__button:focus {
+  box-shadow: var(--btn-box-shadow);
+}
+
+/* Project 6 */
+@keyframes fadeIn {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .ImageCarousel {
+    position: relative;
+    width: 98%;
+  }
+}
+
+@media (min-width: 768px) {
+  .ImageCarousel {
+    position: relative;
+    width: 70%;
+  }
+}
+
+.CarouselPage {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.ImageCarousel__image {
+  width: 100%;
+  animation: fadeIn 0.8s ease-in;
+}
+
+.ImageCarousel__buttons {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+
+.ImageCarousel__button {
+  color: white;
+  background: transparent;
+  border-radius: 0px;
+  border: 0;
+}
+
+.ImageCarousel__button:hover {
+  background-color: black;
+  opacity: 0.5;
+}
+
+.ImageCarousel__button i {
+  pointer-events: none;
+}
+.Carousel__indicators {
+  display: flex;
+  margin-top: 10px;
+}
+.Carousel__indicator-dot {
+  width: 10px;
+  height: 10px;
+  background-color: gray;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.Carousel__indicator-dot:last-child {
+  margin-right: 0px;
+}
+
+.Carousel__indicator-dot--selected {
+  background-color: black;
+}
+
+/* * project 7 */
+@media (max-width: 768px) {
+  .Clock__bar {
+    display: none;
+  }
+
+  .Clock__number {
+    width: 100%;
+  }
+}
+
+.DigitalClock {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: conic-gradient(
+    from 90deg at 25% -10%,
+    #ff4500,
+    #d3f340,
+    #7bee85,
+    #afeeee,
+    #7bee85
+  );
+}
+
+.Clock {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 80%;
+  padding: 20px 0px;
+  background-color: rgba(0, 0, 0, 0.09);
+  color: white;
+  font-family: 'Poiret One';
+  font-size: 5rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.Clock * {
+  margin: 0 10px;
+  padding: 10px 0px;
 }

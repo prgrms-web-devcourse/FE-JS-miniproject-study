@@ -1,4 +1,4 @@
-import GenerateButton from '../components/GenerateButton.js'
+import GenerateButton from '../components/Button.js'
 import { getRandomColor } from '../utils/colors.js'
 import { appendIfPageNotExists } from '../utils/render.js'
 
@@ -36,7 +36,7 @@ export default function HexColorsGradientPage({ $target }) {
     $target: $page,
     text: 'Click Me!',
     className: 'RandomGradientButton',
-    onClickGenerate: () => {
+    onClick: () => {
       const leftColor = getRandomColor()
       const rightColor = getRandomColor()
 

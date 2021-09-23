@@ -1,4 +1,4 @@
-import RandomColorButton from '../components/GenerateButton.js'
+import RandomColorButton from '../components/Button.js'
 import { getRandomColor } from '../utils/colors.js'
 import { appendIfPageNotExists } from '../utils/render.js'
 
@@ -19,7 +19,7 @@ export default function ColorsPage({ $target }) {
     $target: $page,
     text: 'Click Me!',
     className: 'RandomColorButton',
-    onClickGenerate: () => {
+    onClick: () => {
       const color = getRandomColor()
 
       this.setState({ color })
