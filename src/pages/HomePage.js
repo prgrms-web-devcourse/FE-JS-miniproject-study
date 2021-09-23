@@ -13,6 +13,22 @@ const projects = [
     name: 'Random Quote Generator',
     path: '/random-quote',
   },
+  {
+    name: 'The message',
+    path: '/the-message',
+  },
+  {
+    name: 'Counter',
+    path: '/counter',
+  },
+  {
+    name: 'Image Carousel',
+    path: '/image-carousel',
+  },
+  {
+    name: 'Digital Clock',
+    path: '/digital-clock',
+  },
 ]
 
 export default function HomePage({ $target }) {
