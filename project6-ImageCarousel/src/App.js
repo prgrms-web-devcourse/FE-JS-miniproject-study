@@ -49,9 +49,13 @@ export default function App({ $target }) {
     curdot.className += ' active';
   };
 
-  // slide가 렌더되기 전에 showSlides()가 실행되는 문제가 있어서
-  // wep API를 이용해 slide 렌더 이후에 showSlides()를 처리할 수 있게끔 함
-  setTimeout(() => showSlides(slideIndex), 0);
+  this.init = () => {
+    // slide가 렌더되기 전에 showSlides()가 실행되는 문제가 있어서
+    // wep API를 이용해 slide 렌더 이후에 showSlides()를 처리할 수 있게끔 함
+    setTimeout(() => showSlides(slideIndex), 0);
+  };
+
+  this.init();
 
   new Controller({ $target: $slideContainer, onClick: (n) => showSlides((slideIndex += n)) });
 }

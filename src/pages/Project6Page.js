@@ -5,9 +5,10 @@ export default function Project6Page({ $target }) {
 
   $page.className = 'project6 page';
 
-  new App({ $target: $page });
+  const app = new App({ $target: $page });
 
   this.render = () => {
     $target.append($page);
+    app.init();
   };
 }
