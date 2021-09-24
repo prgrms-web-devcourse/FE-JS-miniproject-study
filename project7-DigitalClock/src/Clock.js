@@ -8,7 +8,7 @@ export default function Clock({ $target }) {
     const days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
     const dayNum = date.getDay();
     const addZero = (time) => (time < 10 ? '0' + time : time);
-    const hours = addZero(date.getHours() ? date.getHours() % 12 : '12');
+    const hours = addZero(date.getHours() % 12 ? date.getHours() % 12 : '12');
     const minutes = addZero(date.getMinutes());
     const seconds = addZero(date.getSeconds());
     const ampm = date.getHours() < 12 ? 'AM' : 'PM';
